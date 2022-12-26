@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url(../asset/css/shoppingcar.css);
+        @import url(../asset/css/nav.css);
+        @import url(../asset/css/main.css);
+    </style>
+     <title>香見恨晚</title>
+     <link rel="shortcut icon" href="../asset/img/fragrance.png">
+
+</head>
+<body>
+    <div id="Nav">
+        <div id="nav">
+            <div id="title">
+                <a href="../page/index.html" target="_top">
+                    <h1>首頁</h1>
+                </a>
+                <a href="../page/classification.html" target="_top">
+                    <h1>調性</h1>
+                </a>
+                <a href="../page/shoppingcar.html" target="_top">
+                    <h1>購物車</h1>
+                </a>
+                <a href="../page/personal.html" target="_top">
+                    <h1>個人頁面</h1>
+                </a>
+                <a href="../page/about.html" target="_top">
+                    <h1>關於我們</h1>
+                </a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <section>
+        <div class="Big">
+            <!--確認商品-->
+            <div class="Shopcart">
+                <h1 >CHECKOUT</h1>
+                <div class="shopcart">
+                    <table>
+                        <tr class="cart-title">
+                            <th colspan="2" >商品</th>
+                            <th>單價</th>
+                            <th>數量</th>
+                            <th>小計</th>
+            
+                        </tr>
+                        <tr>
+                            <td colspan="5"><hr style="width: 100%;"></td>
+            
+                        </tr>
+            
+                        <tr>
+                            <td class="cart-img"><img src="../asset/img/BYREDO1.png" alt=""></td>
+                            <td class="cart-text"><h3 style="text-align: left;">BYREDO<h3><p style="font-size: 15px; text-align: left;">無人之境淡香精 50ml</p></td>
+                            <td>$4,999</td>
+                            <td><div class="big_btn_cart">
+                                <div class="btn_cart">
+                                    <input type="button" id="down" value="-">
+                                    <input type="text" id="num" value="1">
+                                    <input type="button" id="up" value="+">
+                                </div>
+                            </div></td>
+                            <td>$4,999</td>
+            
+                        </tr>
+            
+                        <tr>
+                            <td class="cart-img"><img src="../asset/img/BYREDO1.png" alt=""></td>
+                            <td class="cart-text"><h3 style="text-align: left;">BYREDO<h3><p style="font-size: 15px; text-align: left;">無人之境淡香精 50ml</p></td>
+                            <td>$4,999</td>
+                            <td><div class="big_btn_cart">
+                                <div class="btn_cart">
+                                    <input type="button" id="Down" value="-">
+                                    <input type="text" id="Num" value="1">
+                                    <input type="button" id="Up" value="+" >
+                                </div>
+                            </div></td>
+                            <td>$4,999</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><hr style="width: 100%;"></td>
+            
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>TOTAL:</td>
+                            <td>$9,998</td>
+                        </tr>
+            
+                    </table>
+            
+                </div>
+            </div>
+            <!--會員資料 & 寄送方式-->
+            <form action="">
+                <div class="Sent">
+                    <h1 >PAYMENT INFO</h1>
+                    <div class="sent">
+                        <div class="info">
+                            <h2>會員資料</h2>
+                            <input type="text" name="name" placeholder="姓名">
+                            <input type="tel" name="tel" placeholder="電話">
+                            <input type="email" name="mail" placeholder="信箱">
+                            <select name="address" size="1" id="city" style="cursor: pointer;">
+                                <option value="city"> 台北市</option>
+                                <option value="city"> 新北市</option>
+                                <option value="city"> 高雄市</option>
+                                <option value="city"> 臺中市</option>
+                                <option value="city"> 桃園市</option>
+                                <option value="city"> 臺南市</option>
+                                <option value="city"> 彰化縣</option>
+                                <option value="city"> 屏東縣</option>
+                                <option value="city"> 雲林縣</option>
+                                <option value="city"> 新竹縣</option>
+                                <option value="city"> 苗栗縣</option>
+                                <option value="city"> 嘉義縣</option>
+                                <option value="city"> 南投縣</option>
+                                <option value="city"> 新竹市</option>
+                                <option value="city"> 宜蘭縣</option>
+                                <option value="city"> 基隆市</option>
+                                <option value="city"> 花蓮縣</option>
+                                <option value="city"> 嘉義市</option>
+                                <option value="city"> 臺東縣</option>
+                                <option value="city"> 金門縣</option>
+                                <option value="city"> 澎湖縣</option>
+                                <option value="city"> 連江縣</option>
+                            </select>
+                            <input type="text" name="address" placeholder="地址">
+                        </div>
+                        <div class="Way">
+                            <div class="way">
+                                <h2>寄送方式</h2>
+                                <select name="way" id="way" style="cursor: pointer;">
+                                    <option value="way">宅配</option>
+                                    <option value="way">7-11</option>
+                                    <option value="way">全家</option>
+            
+                                </select>
+                            </div>
+                        </div>
+                        <div class="Pay">
+                            <div class="pay">
+                                <h2>支付方式</h2>
+                                <div class="paycontent">
+                                    <div class="payradio"><input type="radio" name="pay" > 貨到付款</div>
+                                    <div class="payradio"><input type="radio" name="pay" > 信用卡</div>
+                                    <div class="payradio"><input type="radio" name="pay" > 線上付款</div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+
+               <div class="btn_buy">
+                    <input type="button" value="BUY" onclick="confirmalert()">
+               </div>
+        </div>
+        </form>
+        
+    </section>
+
+    
+
+
+
+<script>
+
+  var Add = document.getElementById("up")
+  var Reduce = document.getElementById("down")
+  var num = document.getElementById("num")
+
+  Add.onclick = function(){
+    num.value = parseInt(num.value)+1;
+  }
+
+  Reduce.onclick = function(){
+    if(num.value <= 0){
+        num.value = 0;
+    }else{
+        num.value = parseInt(num.value)-1;
+    }
+  }
+
+  var add = document.getElementById("Up")
+  var reduce = document.getElementById("Down")
+  var Num = document.getElementById("Num")
+
+  add.onclick = function(){
+    Num.value = parseInt(Num.value)+1;
+  }
+
+  reduce.onclick = function(){
+    if(Num.value <= 0){
+        Num.value = 0;
+    }else{
+        Num.value = parseInt(Num.value)-1;
+    }
+  }
+
+
+    function confirmalert(){
+        var yes = confirm('是否已確認訂單無誤 ?')
+
+        if(yes){
+            alert('購買成功 ! ')
+        }else{
+            alert('您已按取消，請重新下單。')
+        }
+    }
+</script>
+    
+</body>
+</html>
