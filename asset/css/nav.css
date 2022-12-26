@@ -1,0 +1,53 @@
+*{
+    color: #3a3a3a;
+}
+
+#Nav{
+    background-color:#EEF0F2;
+    position: absolute;
+    top: 25%;
+    z-index:2;
+    position: fixed;
+    
+}
+
+#nav{
+    
+    display: flex;
+}
+
+#title{
+    
+    background-color: #EEF0F2;
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title a:link{
+    text-decoration: none;
+
+}
+
+#title a h1{
+    
+    text-align: center;
+    width: fit-content;
+    margin: 20px;
+    color: #545151;
+    font-size: 25px;
+    font-family: NSimSun;
+}
+
+
+#title a h1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease-out;
+    
+    border-radius: 5px;
+   
+   
+}
+
+
