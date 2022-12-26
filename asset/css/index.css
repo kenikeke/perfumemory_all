@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-/** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}*/
-
+}
 
 .Center {
   display: flex;
@@ -40,6 +39,7 @@ nav a span {
 
 nav:hover a span {
   color: #3a3a3a;
+  z-index: -1;
 }
 
 nav a:hover span {
@@ -61,7 +61,7 @@ nav a span:before {
   font-size: 4em;
   color: rgba(0, 0, 0, 0.1);
 
-  z-index: -1;
+  z-index: -2;
   opacity: 0;
   font-weight: 900;
   text-transform: uppercase;
@@ -90,7 +90,6 @@ header {
 }
 
 .PERFUMEMORY {
-  display: flex;
   position: fixed;
   left: 2%;
   float: left;
@@ -98,7 +97,7 @@ header {
 
 /*漢堡開始*/
 .burgerline {
-  display:flex;
+  display: none;
 }
 
 label {
