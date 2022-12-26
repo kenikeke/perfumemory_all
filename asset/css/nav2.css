@@ -1,0 +1,44 @@
+* {
+    color: #3a3a3a;
+}
+
+
+#Nav {
+    background-color: #EEF0F2;
+    position: absolute;
+    right: 2%;
+    top: -5%;
+}
+
+#nav {
+    display: flex;
+}
+
+#title {
+    /*字*/
+    background-color: #EEF0F2;
+    padding: 3px 10px;
+    display: flex;
+    align-items: right;
+}
+
+#title a:link {
+    text-decoration: none;
+
+}
+
+#title a h1 {
+    text-align: center;
+    width: fit-content;
+    margin: 10px;
+    color: #545151;
+    font-size: 20px;
+    font-family: NSimSun;
+}
+
+
+#title a h1:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
