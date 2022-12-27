@@ -9,7 +9,7 @@
         @import url(../asset/css/nav.css);
         @import url(../asset/css/main.css);
         @import url(../asset/css/login.css);
-       
+        @import url(../asset/css/register.css);
     </style>
     <title>香見恨晚</title>
     <link rel="shortcut icon" href="../asset/img/fragrance.png">
@@ -56,7 +56,39 @@
                                 <button class="button" onclick="show.close()">Cancel</button>
                             </div>
                             <div class="new">尚未擁有帳號 ?
-                                <a href="register.html">前往註冊</a>
+                                <p id="go_register">前往註冊</p>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="show_register">
+                    <div class="frame">
+                        <div class="register">
+                            <h2>Register</h2>
+                            <div class="item">
+                                <label for="name">Name</label>
+                                <input type="text" name="" id="name">
+                            </div>
+                            <div class="item">
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="email">
+                            </div>
+                            <div class="item">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="" id="phone">
+                            </div>
+                            <div class="item">
+                                <label for="account">Account</label>
+                                <input type="text" name="" id="account">
+                            </div>
+                            <div class="item">
+                                <label for="password">Password</label>
+                                <input type="text" name="" id="password">
+                            </div>
+                            <div class="push">
+                                <button type="submit" class="button" onclick="show_register.close()">Register</button>
+                                <button class="button" onclick="show_register.close()">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -73,13 +105,21 @@
 
 
 <script>
-
+//登入介面
 let btn=document.querySelector("#login");
-let shiw=document.querySelector("#show")
+let show=document.querySelector("#show")
 
 btn.addEventListener("click", function(){
             show.showModal();
         })
+
+//註冊介面
+let register = document.querySelector("#go_register");
+let show_register = document.querySelector("#show_register");
+
+register.addEventListener("click",function(){
+    show_register.showModal();
+})
 
 
 
