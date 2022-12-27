@@ -56,3 +56,7 @@ dialog{
 .new {
     align-items: center;
 }
+#go_register{
+    text-decoration: underline;
+    cursor: pointer;
+}
