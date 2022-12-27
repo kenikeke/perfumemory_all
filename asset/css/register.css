@@ -1,22 +1,13 @@
-* {
-    padding: 0;
-    margin: 5px;
-    list-style: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-html,
-body {
-    height: 100%;
-}
 
-body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+dialog {
+   
     background: url("https://p4.wallpaperbetter.com/wallpaper/1017/684/942/surface-light-stripes-lines-wallpaper-preview.jpg") no-repeat center center / cover;
+
 }
+
+
 
 .frame {
     border-style: double;
