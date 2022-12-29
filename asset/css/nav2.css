@@ -3,18 +3,18 @@
 }
 
 
-#Nav {
+#Nav2 {
     background-color: #EEF0F2;
     position: absolute;
     right: 2%;
     top: -5%;
 }
 
-#nav {
+#nav2 {
     display: flex;
 }
 
-#title {
+#title2 {
     /*字*/
     background-color: #EEF0F2;
     padding: 3px 10px;
@@ -22,12 +22,12 @@
     align-items: right;
 }
 
-#title a:link {
+#title2 a:link {
     text-decoration: none;
 
 }
 
-#title a h1 {
+#title2 a h1 {
     text-align: center;
     width: fit-content;
     margin: 10px;
@@ -37,7 +37,7 @@
 }
 
 
-#title a h1:hover {
+#title2 a h1:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.5s ease-out;
     border-radius: 5px;
