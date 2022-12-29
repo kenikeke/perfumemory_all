@@ -7,21 +7,101 @@
     <style>
         @import url(../asset/css/index.css);
         @import url(../asset/css/main.css);
+        @import url(../asset/css/nav.css);
+        @import url(../asset/css/nav2.css);
+        @import url(../asset/css/login.css);
+        @import url(../asset/css/register.css);
        
     </style>
 
     
     <title>Perfumemory</title>
     <link rel="shortcut icon" href="../asset/img/fragrance.png">
-</head>
-    <header>
-        <div class="PERFUMEMORY">
-            <label for="burger"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
-            <input type="checkbox" id="burger" class="burgerbotton">
-            <div class="burgerline">
-            <iframe src="nav2.html" id="navBar" frameborder="0" scrolling="no"></iframe>
-        </div>
+    </head>
+    <body>
+        <header>
+            <div class="PERFUMEMORY">
+                <label for="burger"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
+                <input type="checkbox" id="burger" class="burgerbotton">
+                 <div class="burgerline">
+                <div id="Nav2">
+                    <div id="nav2">
+                        <div id="title2">
+                            <a href="../page/index.html" target="_top">
+                                <h1>首頁</h1>
+                            </a>
+                            <a href="../page/classification.html" target="_top">
+                                <h1>調性</h1>
+                            </a>
+                            <a href="../page/about.html" target="_top">
+                                <h1>關於我們</h1>
+                            </a>
+                            <a href="../page/shoppingcar.html" target="_top">
+                                <h1><img src="../asset/img/shoppingcar.png" alt="購物車"></h1>
+                            </a>
+                            
+                                <h1><img src="../asset/img/personal.png" alt="個人頁面" id="login" onclick="login()" style="cursor: pointer;"></h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </header>
+    <dialog id="show">
+        <div class="frame">
+            <div class="login">
+                <h2>Login</h2>
+                <div class="item">
+                    <label for="account">Account</label>
+                    <input type="text" name="" id="account">
+                </div>
+                <div class="item">
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password">
+                </div>
+                <div class="push">
+                    <button type="submit" class="button">Login</button>
+                    <button class="button" onclick="show.close()">Cancel</button>
+                </div>
+                <div class="new">尚未擁有帳號 ?
+                    <p id="go_register">前往註冊</p>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="show_register">
+        <div class="frame">
+            <div class="register">
+                <h2>Register</h2>
+                <div class="item">
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="name">
+                </div>
+                <div class="item">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div class="item">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="" id="phone">
+                </div>
+                <div class="item">
+                    <label for="account">Account</label>
+                    <input type="text" name="" id="account">
+                </div>
+                <div class="item">
+                    <label for="password">Password</label>
+                    <input type="text" name="" id="password">
+                </div>
+                <div class="push">
+                    <button type="submit" class="button" onclick="show_register.close()">Register</button>
+                    <button class="button" onclick="show_register.close()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
  
     <div class="Center">
         <nav>
@@ -45,22 +125,24 @@
 
 <main>
     <article>
-        <section class="s1"><!-- ad花香調 -->
-            <a href="../page/index.html"></a>
-            <img src="../asset/img/slowdance.jpg" alt="花香廣告">
-        </section>
-        <section><!-- ad清新調 -->
-            <a href="../page/index.html"></a>
-            <img src="../asset/img/slowdance.jpg" alt="花香廣告">
-        </section>
-        <section><!-- ad東方調 -->
-            <a href="../page/index.html"></a>
-            <img src="../asset/img/slowdance.jpg" alt="花香廣告">
-        </section>
-        <section><!-- ad木質調 -->
-            <a href="../page/index.html"></a>
-            <img src="../asset/img/slowdance.jpg" alt="花香廣告">
-        </section>
+        <div class="smell_div">
+            <section class="p1"><!-- ad花香調 -->
+                <a href="../page/index.html"></a>
+                <img src="../asset/img/slowdance.jpg" alt="花香廣告">
+            </section>
+            <section class="p2"><!-- ad清新調 -->
+                <a href="../page/index.html"></a>
+                <img src="../asset/img/slowdance.jpg" alt="花香廣告">
+            </section>
+            <section class="p3"><!-- ad東方調 -->
+                <a href="../page/index.html"></a>
+                <img src="../asset/img/slowdance.jpg" alt="花香廣告">
+            </section>
+            <section class="p4"><!-- ad木質調 -->
+                <a href="../page/index.html"></a>
+                <img src="../asset/img/slowdance.jpg" alt="花香廣告">
+            </section>
+        </div>
     </article>
 </main>
 <footer>
@@ -74,6 +156,26 @@
   </footer>
 
 
+  <script>
+    //登入介面
+    let btn=document.querySelector("#login");
+    let show=document.querySelector("#show")
+    
+    btn.addEventListener("click", function(){
+                show.showModal();
+            })
+    
+    //註冊介面
+    let register = document.querySelector("#go_register");
+    let show_register = document.querySelector("#show_register");
+    
+    register.addEventListener("click",function(){
+        show_register.showModal();
+    })
+    
+    
+    
+    </script>
 
 </body>  
 </html>
