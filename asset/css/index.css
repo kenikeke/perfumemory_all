@@ -90,6 +90,14 @@ header {
   z-index: 5;
 }
 
+.gotop {
+  z-index: 10;
+  position: fixed;
+  top: 90%;
+  right: 4%;
+  opacity: 0.80;
+}
+
 .PERFUMEMORY {
   position: fixed;
   float: left;
@@ -99,7 +107,6 @@ header {
   justify-content: left;
   background-color: #dedede;
   z-index: 10;
-
   box-shadow: 0 3px 3px 2px #ccc;
 }
 
@@ -108,7 +115,7 @@ header {
   display: none;
 }
 
-label {
+.perimg {
   display: block;
   position: relative;
   top: 20px;
@@ -124,15 +131,6 @@ label {
 }
 
 /*漢堡結尾*/
-
-
-footer {
-  background-color: #dddddd;
-  color: #444444;
-  text-align: center;
-  padding: 10px;
-}
-
 
 
 /*右上角選單*/
@@ -177,24 +175,93 @@ footer {
   border-radius: 5px;
 }
 
+
+
 /*右上角選單結束*/
 
 article {
   width: 100%;
-  height: 400px;
+  height: auto;
+  background-color: #c0bcbc;
+}
+
+/*頁面下廣告*/
+.ad1 {
   display: flex;
-  background-color: #c81a1a;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-}
-
-.p1 {
-  position: relative;
-  top: 400px;
-}
-
-.smell_div {
-  display: flex;
+  /*min-height: 100vh;*/
   flex-direction: column;
-  
+  padding: 10px;
+}
+
+footer {
+  background-color: #dddddd;
+  color: #444444;
+}
+
+a {
+  color: #3a3a3a;
+  font-family: NSimSun;
+  font-weight: bold;
+}
+
+.end {
+  position: relative;
+  left: 10px;
+  text-align: left;
+  width: 70px;
+}
+
+/*.QR {
+  text-align: right;
+}
+
+.copyright {
+  position: absolute;
+
+
+}*/
+
+
+/*標籤下拉*/
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 調性字*/
+.dropdown:hover .dropbtn {
+  background-color: #dbd9d9;
+}
+.footerdiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
