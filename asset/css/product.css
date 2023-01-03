@@ -1,0 +1,128 @@
+/*左邊的選單*/
+* {
+    color: #3a3a3a;
+}
+
+#Nav {
+    background-color: #EEF0F2;
+    position: fixed;
+    top: 150px;
+}
+
+#nav {
+    display: flex;
+}
+
+#title {
+    background-color: #c5bdbdde;
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#title a:link {
+    text-decoration: none;
+
+}
+
+#title a h1 {
+
+    text-align: center;
+    width: fit-content;
+    margin: 20px;
+    color: #545151;
+    font-size: 25px;
+    font-family: NSimSun;
+}
+
+
+#title a h1:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
+
+/*左邊選單結束*/
+
+.air {
+    width: 100%;
+    height: 260px;
+    margin: 60px;
+}
+
+article {
+    position: relative;
+    top: 80px;
+    left: 230px;
+    width: 75%;
+    border-radius: 5%;
+    background-color:transparent;
+}
+
+/*商品*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-img:hover{
+    transform: scale(0.9,0.9);
+    transition: all 0.5s ;
+    
+}
+
+
+.item {
+    width: 290px;
+    height: 420px;
+    background-color: #c5bdbdde;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.item-img {
+    width: 100%;
+    padding: 15px 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.item_btn{
+    width: 60%;
+    height: 50%;
+    display: inline;
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0.6;
+    border:2px solid white ;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.item-img:hover .item_btn{
+    display: block;
+    
+}
+
+.item_btn:hover{
+   color: black;
+   border: 2px solid black;
+   background-color: #EEF0F2;
+   transform: scale(1.1,1.1);
+   transition: all 0.5s ease-out;
+}
+
+.price-and-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*商品結束*/

@@ -1,59 +1,157 @@
-
-
-
-dialog {
-   
-    background: url("https://p4.wallpaperbetter.com/wallpaper/1017/684/942/surface-light-stripes-lines-wallpaper-preview.jpg") no-repeat center center / cover;
-
-}
-
-
-
-.frame {
-    border-style: double;
-    width: 300px;
-    padding: 15px 30px 3px 30px;
-}
-
-.frame .register .item {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0px 10px 0px;
-}
-
-.frame .register .item input {
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-}
-
-.frame .register .push {
-    width: 100%;
-    display: flex;
-    margin: auto;
-    font-size: 0px;
-    padding: 10px 0px;
-}
-
-.frame .register .push button {
-    padding: 5px 0px;
-    width: 70%;
-    font-size: 15px;
-    border: gray;
-    background-color: rgb(185, 183, 178);
+.big{
+    position: relative !important;
+    top: 150px;
+    left: 350px;
+    background-color:#d8dadbac;
     border-radius: 20px;
+    width: 800px;
+    padding: 20px;
+    color: #3a3a3a;
+
+  }
+  .mid{
+    flex: 1 1 auto;
+  }
+  .info{
+    justify-content: space-between;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .h2card{
+    text-align: center;
+    
+  }
+  .data{
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 10px 0;
+  }
+  
+  
+  .inputstyle{
+    margin: 10px 0px;
+    padding:10 px;
+    width:90%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #757879ac ;
+    background-color:transparent;
+    font-size: 15px;
+    padding-left: 20px;
+    
+  }
+  #update{
+    background-color: #757879ac;
+    border:none;
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+    
+  }
+  
+  #update:hover{
+    background-color:#3a3a3a;
+    border:none ;
+    color: #d8dadbac;
+    transition: 1s;
+    cursor: pointer;
+    
+    
+  }
+  
+  .userbottom{
+    display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+  
+  
+  
+  
+  #close{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #3a3a3a;
+    color: white;
+   
+  }
+  
+  
+#show{
+    width: 300px;
+    height: fit-content;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    border: none;
+    padding: 20px;
+  }
+  #userupdate{
+    top: 10%;
+    left: 15%;
+    padding-top: 20px;
+  }
+  
+  .btndiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .btn_update{
+    background-color: #d8dadbac;
+    color: #3a3a3a;
+    border:none;
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid #757879ac;
+  }
+  
+  
+  .btn_update:hover{
+    background-color:#3a3a3a;
+    border:none ;
+    color: #d8dadbac;
+    
+    transition: 1s;
+    cursor: pointer;
+    
+    
+  }
+
+#go_register{
+    text-decoration: underline;
     cursor: pointer;
 }
 
-.frame .register .push button {
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+.login{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 300px;
+  
 }
-
-.frame .register .push button:hover {
-    background-color: rgba(100, 100, 100, 0.2);
+.push{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.frame .register .push button+button {
-    margin-left: 20%;
+.loginh2{
+  display: flex;
+  width: 100%;
+  justify-content: center
 }

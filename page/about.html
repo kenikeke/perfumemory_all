@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url(../asset/css/index.css);
         @import url(../asset/css/about.css);
         @import url(../asset/css/nav.css);
         @import url(../asset/css/main.css);
@@ -16,6 +17,134 @@
     
 </head>
 <body>
+    <header><!-- 漢堡 -->
+        <div class="PERFUMEMORY">
+            <label for="burger"class="perimg"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
+            <input type="checkbox" checked id="burger" class="burgerbotton">
+             <div class="burgerline">
+            <div id="Nav2">
+                <div id="nav2">
+                    <div id="title2">
+                        <a href="../page/index.html" target="_top">
+                            <h1>首頁</h1>
+                        </a>
+                        <a href="../page/product.html" target="_top">
+                            <div class="dropdown">
+                                <h1 class="dropbtn">調性</h1>
+                                <div class="dropdown-content">
+                                    <a href="../page/flora.html">花香調</a>
+                                    <a href="../page/fresh.html">清新調</a>
+                                    <a href="../page/oriental.html">東方調</a>
+                                    <a href="../page/woody.html">木質調</a>
+                                  </div>
+                              </div>
+                        </a>
+                        <a href="../page/about.html" target="_top">
+                            <h1>關於我們</h1>
+                        </a>
+                        <a href="../page/shoppingcar.html" target="_top">
+                            <h1><img src="../asset/img/shoppingcar.png" alt="購物車"></h1>
+                        </a>
+                        <a  target="_top" style="cursor:pointer;">
+                                
+                            <div class="dropdown">
+                                <h1><img class="dropbtn" src="../asset/img/personal.png" alt="個人頁面"></h1>
+                               
+                                <div class="dropdown-content" style="font-size: smaller;">
+                                    <p id="login" onclick="login()" style="cursor: pointer;">登入</p>
+                                    
+                                    <a href="../page/personal.html">個人頁面</a>
+                                    
+                                  </div>
+                              </div>
+                        </a>
+                        
+                    </a>
+                    <dialog id="show">
+                        <div class="frame">
+                            <div class="login">
+                                <div class="loginh2">
+                                    <h2 >Login</h2>
+                                </div>
+                                <div class="push">
+                                    <label for="account">Account</label>
+                                    <input type="text" name="" id="account">
+                                </div>
+                                <div class="push">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="" id="password">
+                                </div>
+                                <div class="push">
+                                    <button type="submit" class="btn_update"onclick="show.close()">Login</button>
+                                    <button class="btn_update" onclick="show.close()">Cancel</button>
+                                </div>
+                                <div class="new">尚未擁有帳號 ?
+                                    <p id="go_register">前往註冊</p>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
+    
+                    <dialog id="userupdate" style="background-color: #c3c5c6; width: 80%; border-radius: 10px; border: 2px solid #757879ac;"  >
+                        <form>
+                            <div class="contain">
+                                <h2 class="h2card">會員基本資料</h2>
+                                
+                                    <div class="info">
+                                        <div class="data">
+                                            <label for="account">帳號：<br></label>
+                                            <input class="inputstyle"type="text" placeholder="你的帳號">
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">密碼：<br></label>
+                                            <input class="inputstyle" type="password" placeholder="你的密碼">
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">姓名：<br></label>
+                                            <input class="inputstyle" type="text" placeholder="Your Name">
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">電子信箱：<br></label>
+                                            <input class="inputstyle" type="email" placeholder="Your E-mail">
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">生日：<br></label>
+                                            <input class="inputstyle" type="date" >
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">性別： <br></label>
+                                            <input  type="radio"  name="sexual" style="margin: 20px 20px 5px;">男<br>
+                                                <input  type="radio"  name="sexual" style="margin: 20px 20px">女<br>
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">通訊地址：<br></label>
+                                            <input class="inputstyle" type="text" placeholder="你的住址">
+                                        </div>
+                                        <div class="data">
+                                            <label for="name">聯絡電話：<br></label>
+                                            <input class="inputstyle" type="tel" placeholder="你的電話">
+                                        </div>
+    
+                                        <div class="btndiv">
+                                            <input type="submit" value="確認" class="btn_update">
+                                            <input type="reset" value="取消" class="btn_update" onclick="userupdate.close()" >
+                                        </div>
+                                    </div>
+                            </div>
+                        </form>
+                    </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gotop">
+            <a href="#top">
+                <img src="../asset/img/uptop.png" alt="uptop">
+            </a>
+        </div>
+
+       
+        </header>
     <main>
         <div id="Nav">
             <div id="nav">
@@ -23,7 +152,7 @@
                     <a href="../page/index.html" target="_top">
                         <h1>首頁</h1>
                     </a>
-                    <a href="../page/classification.html" target="_top">
+                    <a href="../page/product.html" target="_top">
                         <h1>調性</h1>
                     </a>
                     <a href="../page/shoppingcar.html" target="_top">
@@ -36,68 +165,124 @@
                         <h1>關於我們</h1>
                     </a>
 
-                    <p id="login" onclick="login()" style="cursor: pointer;">登入</p>
                     
                 </div>
-                <dialog id="show">
-                    <div class="frame">
-                        <div class="login">
-                            <h2>Login</h2>
-                            <div class="item">
-                                <label for="account">Account</label>
-                                <input type="text" name="" id="account">
-                            </div>
-                            <div class="item">
-                                <label for="password">Password</label>
-                                <input type="password" name="" id="password">
-                            </div>
-                            <div class="push">
-                                <button type="submit" class="button">Login</button>
-                                <button class="button" onclick="show.close()">Cancel</button>
-                            </div>
-                            <div class="new">尚未擁有帳號 ?
-                                <p id="go_register">前往註冊</p>
-                            </div>
-                        </div>
-                    </div>
-                </dialog>
-
-                <dialog id="show_register">
-                    <div class="frame">
-                        <div class="register">
-                            <h2>Register</h2>
-                            <div class="item">
-                                <label for="name">Name</label>
-                                <input type="text" name="" id="name">
-                            </div>
-                            <div class="item">
-                                <label for="email">Email</label>
-                                <input type="email" name="" id="email">
-                            </div>
-                            <div class="item">
-                                <label for="phone">Phone Number</label>
-                                <input type="text" name="" id="phone">
-                            </div>
-                            <div class="item">
-                                <label for="account">Account</label>
-                                <input type="text" name="" id="account">
-                            </div>
-                            <div class="item">
-                                <label for="password">Password</label>
-                                <input type="text" name="" id="password">
-                            </div>
-                            <div class="push">
-                                <button type="submit" class="button" onclick="show_register.close()">Register</button>
-                                <button class="button" onclick="show_register.close()">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                </dialog>
+  
             
                 
             </div>
         </div>
-        
+        <div class="article_div">
+            <div id="front">
+                <h1 style="text-align: center;">前端人員</h1>
+            </div>
+            <div class="big_member">
+                <section class="part">
+                    <div class="member">
+                        <img src="../asset/img/128.png" height="300px" style="border-radius: 15px;">
+                        <div class="intro1">
+                            <pre>
+                                      ---成員1---
+
+                                資管二甲 11044128 呂芯穎
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="part">
+                    <div class="member">
+                        <img src="../asset/img/136.jpg" height="300px" style="border-radius: 15px;">
+                        <div class="intro1">
+                            <pre>
+                                      ---成員2---
+
+                                資管二甲 11044136 連翊瑄
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="part">
+                    <div class="member">
+                        <img src="../asset/img/108.png" height="300px" style="border-radius: 15px;">
+                        <div class="intro1">
+                            <pre>
+                                      ---成員3---
+
+                                國貿三乙 10842250 柯可妮
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+            </div class="article_div">
+                
+            <div class="article_div">
+                <div id="back">
+                    <h1 style="text-align: center;">後端人員</h1>
+                </div>
+                <div class="big_member">
+                    <section class="part">
+                        <div class="member">
+                            <img src="../asset/img/220.png" height="300px" style="border-radius: 15px;">
+                            <div class="intro1">
+                                <pre>
+                                          ---成員1---      
+
+                                    資管二乙 11044220 簡子涵
+                                </pre>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="part">
+                        <div class="member">
+                            <img src="../asset/img/243.png" height="300px" style="border-radius: 15px;">
+                            <div class="intro1">
+                                <pre>
+                                          ---成員2---
+
+                                    資管二乙 11044243 葉蓁廷
+                                </pre>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="part">
+                        <div class="member">
+                            <img src="../asset/img/258.jpg" height="300px" style="border-radius: 15px;">
+                            <div class="intro1">
+                                <pre>
+                                          ---成員3---
+                                          
+                                    資管二乙 11044258 黃若庭
+                                </pre>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div class="article_div">
+
+        <div class="article_div">
+            <div id="aboutUs">
+                <h1 style="text-align: center;">關於我們</h1>
+            </div>
+            <div class="big_member">
+                <section class="part">
+                    <div class="member">
+                        <img src="../asset/img/logo.jpg" height="300px" style="border-radius: 15px;">
+                        <div class="intro1">
+                            <pre>
+                                        ---Perfumemory---
+                                一天之中，會發生很多事情，但可以讓我們一直
+                                刻骨銘心的總是寥寥無幾，而五感之中，傳遞會
+                                直接將刺激傳到大腦的就是嗅覺；嗅覺是最直接
+                                能喚起我們記憶以及情緒記憶的感官。
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div class="article_div">
         
       
 
@@ -115,10 +300,10 @@ btn.addEventListener("click", function(){
 
 //註冊介面
 let register = document.querySelector("#go_register");
-let show_register = document.querySelector("#show_register");
+let userupdate = document.querySelector("#userupdate");
 
 register.addEventListener("click",function(){
-    show_register.showModal();
+    userupdate.showModal();
 })
 
 
