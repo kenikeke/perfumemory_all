@@ -47,7 +47,7 @@
 
 article {
     background-color: transparent;
-    height: 1500px;
+    height: 1600px;
 }
 
 .zi_box_1 {
@@ -56,7 +56,7 @@ article {
     padding: 20px;
     position: relative;
     left: 280px;
-    top: 270px;
+    top: 230px;
     box-shadow: 2px 2px 1px #c7c7c7;
     border-radius: 8px;
     width: 800px;
@@ -73,6 +73,67 @@ article {
     position: absolute;
     top: -1em;
 }
+
+
+.zi_box_2 {
+    border: 2px solid #444444;
+    margin: 2em 0;
+    padding: 20px;
+    position: relative;
+    left: 280px;
+    top: 270px;
+    box-shadow: 2px 2px 1px #c7c7c7;
+    border-radius: 8px;
+    width: 800px;
+    height: 500px;
+}
+
+.zi_box_2::before {
+    background-color: #eef0f2;
+    color: #8b9bab;
+    content: "其他評論";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 0.5em;
+    position: absolute;
+    top: -1em;
+}
+
+.checked {
+    color: orange;
+}
+
+.downitem {
+    display: flex;
+    flex-direction: column;
+}
+
+.downname {
+    display: flex;
+    padding: 10px;
+}
+
+.downimg {
+    display: flex;
+}
+
+.downcomment {
+    display: flex;
+    padding: 10px;
+}
+
+.downstar {
+    display: flex;
+    padding: 10px;
+}
+
+.us {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
 
 .btn_buy {
     display: flex;
@@ -97,6 +158,7 @@ article {
 .amount {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .footerdiv {
