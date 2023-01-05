@@ -1,0 +1,106 @@
+.item {
+    position: relative;
+    top: 130px;
+    left: 250px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.right-content {
+    position: relative;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-img {
+    float: left;
+}
+
+.perfumeimg {
+    width: 370px;
+}
+
+.item-title {
+    display: flex;
+    /*字體*/
+    font-size: 45px;
+    font-weight: bold;
+    font-family: NSimSun;
+
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.price-and-amount {
+    display: flex;
+    flex-direction: column;
+}
+
+
+article {
+    background-color: transparent;
+    height: 1500px;
+}
+
+.zi_box_1 {
+    border: 2px solid #444444;
+    margin: 2em 0;
+    padding: 20px;
+    position: relative;
+    left: 280px;
+    top: 270px;
+    box-shadow: 2px 2px 1px #c7c7c7;
+    border-radius: 8px;
+    width: 800px;
+    height: 300px;
+}
+
+.zi_box_1::before {
+    background-color: #eef0f2;
+    color: #8b9bab;
+    content: "寫下評論";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 0.5em;
+    position: absolute;
+    top: -1em;
+}
+
+.btn_buy {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+
+}
+
+.btn_buy input {
+    width: 180px;
+    height: 35px;
+}
+
+.btn_buy input:hover {
+    background-color: #EEF0F2;
+    color: #3a3a3a;
+    transition: 0.5s;
+    border: 1px solid #3a3a3a;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

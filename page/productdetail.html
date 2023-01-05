@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品詳細內容</title>
+    <style>
+        @import url(../asset/css/index.css);
+        @import url(../asset/css/main.css);
+        @import url(../asset/css/shoppingcar.css);
+        @import url(../asset/css/productdetail.css);
+
+    </style>
+</head>
+<link rel="shortcut icon" href="../asset/img/fragrance.png">
+<body>
+    <header><!-- 漢堡 -->
+        <div class="PERFUMEMORY">
+            <label for="burger"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
+            <input type="checkbox" checked id="burger" class="burgerbotton">
+             <div class="burgerline">
+            <div id="Nav2">
+                <div id="nav2">
+                    <div id="title2">
+                        <a href="../page/index.html" target="_top">
+                            <h1>首頁</h1>
+                        </a>
+                        <a href="../page/classification.html" target="_top">
+                            <div class="dropdown">
+                                <h1 class="dropbtn">調性</h1>
+                                <div class="dropdown-content">
+                                  <a href="#">花香調</a>
+                                  <a href="#">清新調</a>
+                                  <a href="#">東方調</a>
+                                  <a href="#">木質調</a>
+                                </div>
+                              </div>
+                        </a>
+                        <a href="../page/about.html" target="_top">
+                            <h1>關於我們</h1>
+                        </a>
+                        <a href="../page/shoppingcar.html" target="_top">
+                            <h1><img src="../asset/img/shoppingcar.png" alt="購物車"></h1>
+                        </a>
+                        <a href="../page/personal.html" target="_top">
+                            <h1><img src="../asset/img/personal.png" alt="個人頁面"></h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gotop">
+            <a href="#top">
+                <img src="../asset/img/uptop.png" alt="uptop">
+            </a>
+        </div>
+</header>
+
+<main>
+    <article>
+        <section>
+            <div class="item">
+                <div class="item-img"><!--商品照片-->
+                  <img src="../asset/img/product1.jpg " alt="" class="perfumeimg">
+                </div>
+                <div class="right-content">
+                    <div class="item-title"><!--商品名稱-->
+                      <h1>香水名字</h1>
+                    </div>
+                    <div class="item-content"><!--商品內容-->
+                      <p>這裡是要介紹商品的地方 要寫前調中調後調那些的</p>
+                    </div>
+                    <div class="price-and-amount"><!--商品價格-->
+                      <div class="price">
+                        <h1>定價:$50</h1>
+                      </div>
+                      <div class="amount"><!--加減選單-->
+                        <tr>
+                            <td class="big_btn_cart">
+                                <div class="btn_cart">
+                                    <input type="button" id="down" value="-">
+                                    <input type="text" id="num" value="1">
+                                    <input type="button" id="up" value="+">
+                                </div>
+                                    <div class="btn_buy">
+                                        <input type="button" value="BUY" onclick="confirmalert()">
+                                    </div>
+                            </td>
+                        </tr>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <section>
+            
+            <div class="zi_box_1"> <!--自己評論區-->
+                <input type="text" name="name" placeholder="姓名">
+                <div>要放星星的地方</div> 
+                <textarea rows="5" placeholder="輸入您的評論" style="width:750px;height:100px;"></textarea><br>
+            </div>
+            
+        </section>
+    </article>
+</main>
+<footer>
+    <div class="footerdiv">
+            <div class="end">
+                    <ul>
+                        <li><a href="../page/about.html">聯絡我們</a></li>
+                        <li><a href="##">幕後照片</a></li>
+                        <li><a href="##">訂購資料</a></li>
+                        <li><a href="https://appeal.cpc.ey.gov.tw/WWW/Default.aspx">申訴專線</a></li>
+                    </ul>
+            </div>
+            <h5 class="copyright">Copyrgiht @PERFUMEMORY 2022 All rights reserved</h5>
+            <div class="QR">
+                <img src="../asset/img/QRCode.png" alt="PM QRcode">
+                <h5>QRcode</h5>
+            </div>
+               
+        </div>
+</footer>
+
+</body>
+
+<script>
+
+    var Add = document.getElementById("up")
+    var Reduce = document.getElementById("down")
+    var num = document.getElementById("num")
+  
+    Add.onclick = function(){
+      num.value = parseInt(num.value)+1;
+    }
+  
+    Reduce.onclick = function(){
+      if(num.value <= 0){
+          num.value = 0;
+      }else{
+          num.value = parseInt(num.value)-1;
+      }
+    }
+  
+    var add = document.getElementById("Up")
+    var reduce = document.getElementById("Down")
+    var Num = document.getElementById("Num")
+  
+    add.onclick = function(){
+      Num.value = parseInt(Num.value)+1;
+    }
+  
+    reduce.onclick = function(){
+      if(Num.value <= 0){
+          Num.value = 0;
+      }else{
+          Num.value = parseInt(Num.value)-1;
+      }
+    }
+  
+  
+      function confirmalert(){
+          var yes = confirm('是否已確認數量正確 ?')
+  
+          if(yes){
+              alert('已加入購物車 ! ')
+          }else{
+              alert('您已按取消，請重新下單。')
+          }
+      }
+      
+  </script>
+</html>
