@@ -293,11 +293,7 @@ header {
 .dropdown:hover .dropbtn {
     background-color: #dbd9d9;
   }
-  .footerdiv{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }    
+   
 .big{
   display: flex;
   justify-content: center;
@@ -452,4 +448,5 @@ header {
   align-items: center;
   background-color: #dddddd;
   color: #444444;
+  padding: 20px;
 }

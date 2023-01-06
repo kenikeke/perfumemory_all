@@ -191,26 +191,32 @@
                         </div>
                     </div>
                     <div class="zi_box_1"> <!--自己評論區--><form action="add.jsp">
-                <input type="text" name="name" placeholder="姓名">
-				<input type="text" name="subject" placeholder="留言主題">
-				<input type="text" name="mail" placeholder="email">
-                <div class="my-rating" data-rating="2.5">
+                        <div class="textflex">
+                            <input type="text" name="name" placeholder="姓名">
+                            <input type="text" name="subject" placeholder="留言主題">
+                            <input type="text" name="mail" placeholder="email">
+                        </div>
+                        
+                        <div class="my-rating" data-rating="2.5">
                 
                 
-				<input type="submit"  value="送出"><br></form>
-				<script>
-                            $(".my-rating").starRating({
-                            totalStars: 5,
-                            starShape: 'rounded',
-                            starSize: 40,
-                            emptyColor: 'lightgray',
-                            hoverColor: '#FFF838',
-                            activeColor: '#717358',
-                            useGradient: false
-                            });
+				
+                         <script>
+                                $(".my-rating").starRating({
+                                totalStars: 5,
+                                starShape: 'rounded',
+                                starSize: 40,
+                                emptyColor: 'lightgray',
+                                hoverColor: '#FFF838',
+                                activeColor: '#717358',
+                                useGradient: false
+                                });
                         </script>
-                        <textarea rows="5" name="content" placeholder="輸入您的評論" style="width:750px;height: 170px;"></textarea><br>
+                        
+                            <textarea rows="5" name="content" placeholder="輸入您的評論" style="width:750px;height: 170px;"></textarea><br>
+                            <div class="sendbtn"><input type="submit" class="btn_send"  value="送出"><br></div></form>
                     </div>
+                </div>
                 
             
     
@@ -264,7 +270,7 @@
                 </div>
     
            
-        </div>
+       
         
       
             
@@ -277,21 +283,11 @@
         
     
 </main>
-<footer style="position:relative; bottom:-800px">
+<footer style="position:relative; bottom:-230px">
     <div class="footerdiv">
-        <div class="end">
-                <ul>
-                    <li><a href="../page/about.html">聯絡我們</a></li>
-                    <li><a href="##">幕後照片</a></li>
-                    <li><a href="##">訂購資料</a></li>
-                    <li><a href="##">申訴專線</a></li>
-                </ul>
-        </div>
+    
         <h5 class="copyright">Copyrgiht @PERFUMEMORY 2022 All rights reserved</h5>
-        <div class="QR">
-            <img src="../asset/img/QRCode.png" alt="PM QRcode">
-            <h5>QRcode</h5>
-        </div>
+        
            
     </div>
 </footer>

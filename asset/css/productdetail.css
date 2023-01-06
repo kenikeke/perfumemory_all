@@ -60,7 +60,7 @@ article {
     box-shadow: 2px 2px 1px #c7c7c7;
     border-radius: 8px;
     width: 800px;
-    height: 300px;
+    height: fit-content;
 }
 
 .zi_box_1::before {
@@ -81,7 +81,7 @@ article {
     padding: 20px;
     position: relative;
     /* left: 280px; */
-    top: 50px;
+    top: 250px;
     box-shadow: 2px 2px 1px #c7c7c7;
     border-radius: 8px;
     
@@ -169,4 +169,27 @@ article {
 }
 header{
     width: 100%;
+}
+.textflex{
+    display: flex;
+    justify-content: space-around;
+}
+.btn_send{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px ;
+    border: none;
+    background-color: #3a3a3a;
+    color:#EEF0F2;
+    cursor: pointer;
+}
+.btn_send:hover{
+    background-color: #EEF0F2;;
+    color:#3a3a3a;
+    transition: 0.5s;
+    border: 1px solid #3a3a3a;
+}
+.sendbtn{
+    display: flex;
+    justify-content: center;
 }
