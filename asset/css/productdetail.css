@@ -205,3 +205,12 @@ header{
     display: flex;
     justify-content: center;
 }
+#show {
+    width: 300px;
+    height: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    border: none;
+    padding: 20px;
+}

@@ -295,7 +295,23 @@
 </body>
 
 <script>
-
+    //登入介面
+    let btn=document.querySelector("#login");
+    let show=document.querySelector("#show")
+    
+    btn.addEventListener("click", function(){
+                show.showModal();
+            })
+    
+    //註冊介面
+    let register = document.querySelector("#go_register");
+    let userupdate = document.querySelector("#userupdate");
+    
+    register.addEventListener("click",function(){
+        userupdate.showModal();
+    })
+    
+    
     var Add = document.getElementById("up")
     var Reduce = document.getElementById("down")
     var num = document.getElementById("num")
