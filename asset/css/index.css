@@ -268,3 +268,74 @@ a {
   color: #444444;
   padding: 20px;
 }
+/*熱門商品*/
+.hotcontainer {
+  position: relative;
+  width: fit-content;
+}
+
+.hotimg {
+  display: block;
+  width: 150px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.hotcontainer:hover .overlay {
+  height: 100%;
+}
+
+.hottextp {
+  font-size: 20px;
+}
+
+.hottext {
+  color: white;
+  font-size: 3px;
+  position: relative;
+  font-family: NSimSun;
+  top: 50%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.shadow {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hot {
+  width: 100%;
+  padding: 10px 5px 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
