@@ -25,12 +25,8 @@ html{
 }
 
 footer{
-    
     margin-top: 50px;
-    height: 50px;
-    width: 100%;
-    position: relative;
-    bottom: -120px;
+    height: 50px; width: 100%;
 
 }
 .title{
