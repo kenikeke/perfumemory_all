@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html" %>
+<%@page pageEncoding="UTF-8"%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,6 @@
 </head>
 <link rel="shortcut icon" href="../asset/img/fragrance.png">
 <body>
-     <div class="setflex">
     <header><!-- 漢堡 -->
         <div class="PERFUMEMORY">
             <label for="burger" class="perimg"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
@@ -156,82 +156,72 @@
 </header>
 
 <main>
-   
-       
-                <div class="item">
-                    <div class="item-img"><!--商品照片-->
-                    <img src="../asset/img/product1.jpg " alt="" class="perfumeimg">
+    <article>
+        <section>
+            <div class="item">
+                <div class="item-img"><!--商品照片-->
+                  <img src="../asset/img/product1.jpg " alt="" class="perfumeimg">
+                </div>
+                <div class="right-content">
+                    <div class="item-title"><!--商品名稱-->
+                      <h1>香水名字</h1>
                     </div>
-                    <div class="right-content">
-                        <div class="item-title"><!--商品名稱-->
-                        <h1>香水名字</h1>
-                        </div>
-                        <div class="item-content"><!--商品內容-->
-                        <p>這裡是要介紹商品的地方 要寫前調中調後調那些的</p>
-                        </div>
-                        <div class="price-and-amount"><!--商品價格-->
-                        <div class="price">
-                            <h1>定價:$50</h1>
-                        </div>
-                        <div class="amount"><!--加減選單-->
-                            <tr>
-                                <td class="big_btn_cart">
-                                    <div class="btn_cart">
-                                        <input type="button" id="down" value="-">
-                                        <input type="text" id="num" value="1">
-                                        <input type="button" id="up" value="+">
+                    <div class="item-content"><!--商品內容-->
+                      <p>這裡是要介紹商品的地方 要寫前調中調後調那些的</p>
+                    </div>
+                    <div class="price-and-amount"><!--商品價格-->
+                      <div class="price">
+                        <h1>定價:$50</h1>
+                      </div>
+                      <div class="amount"><!--加減選單-->
+                        <tr>
+                            <td class="big_btn_cart">
+                                <div class="btn_cart">
+                                    <input type="button" id="down" value="-">
+                                    <input type="text" id="num" value="1">
+                                    <input type="button" id="up" value="+">
+                                </div>
+                                    <div class="btn_buy">
+                                        <input type="button" value="BUY" onclick="confirmalert()">
                                     </div>
-                                        <div class="btn_buy">
-                                            <input type="button" value="BUY" onclick="confirmalert()">
-                                        </div>
-                                </td>
-                            </tr>
-                            </div>
-                        </div>
+                            </td>
+                        </tr>
                         </div>
                     </div>
-                    <div class="zi_box_1"> <!--自己評論區-->
-                        <input type="text" name="name" placeholder="姓名">
-                        <div class="my-rating" data-rating="2.5">
-                        <script>
-                            $(".my-rating").starRating({
-                            totalStars: 5,
-                            starShape: 'rounded',
-                            starSize: 40,
-                            emptyColor: 'lightgray',
-                            hoverColor: '#FFF838',
-                            activeColor: '#717358',
-                            useGradient: false
-                            });
-                        </script>
-                        <textarea rows="5" placeholder="輸入您的評論" style="width:750px;height: 170px;"></textarea><br>
                     </div>
-                
+                </div>
+          </div>
+        </section>
+        
+        <section>
             
-    
-           
-                
-                <div class="zi_box_2"> <!--別人評論區-->
-                    <div class="downitem"><!--別人1-->
-                        <div class="us">
-                            <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
-                            <div class="downname">11044128 呂芯穎</div>
-                        </div>
-                        <div class="downstar">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                        <div class="downcomment"><p>噴完之後 問同學 要不要和狗狗一起去散步 大家都喜歡</p></div>
-                    </div>
-                
-    
-                <div class="downitem"><!--別人2-->
+            <div class="zi_box_1"> <!--自己評論區-->
+			
+                <input type="text" name="name" placeholder="姓名">
+                <div class="my-rating" data-rating="2.5">
+                <script>
+                    $(".my-rating").starRating({
+                    totalStars: 5,
+                    starShape: 'rounded',
+                    starSize: 40,
+                    emptyColor: 'lightgray',
+                    hoverColor: '#FFF838',
+                    activeColor: '#717358',
+                    useGradient: false
+                    });
+                </script>
+                <textarea rows="5" placeholder="輸入您的評論" style="width:750px;height: 170px;"></textarea><br>
+            </div>
+            
+        </section>
+
+        <section>
+            
+            <div class="zi_box_2"> <!--別人評論區-->
+                <div class="downitem"><!--別人1-->
                     <div class="us">
                         <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
-                        <div class="downname">10842250 柯可妮</div>
+                        <div class="downname">11044128 呂芯穎</div>
                     </div>
                     <div class="downstar">
                         <span class="fa fa-star checked"></span>
@@ -240,55 +230,64 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                     </div>
-                    <div class="downcomment">除了太香了以外，我找不到缺點！</div>
+                    <div class="downcomment"><p>噴完之後 問同學 要不要和狗狗一起去散步 大家都喜歡</p></div>
                 </div>
-                <div class="downitem"><!--別人3-->
-                    <div class="us">
-                        <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
-                        <div class="downname">11044136 連翊瑄</div>
-                    </div>
-                    <div class="downstar">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="downcomment"><p>我很想給滿分，但我是貓派。</p><p>看到樓上的留言我就不想給了。</p></div>
-                
-                </div>
-    
-           
-        </div>
-        
-      
             
-                
+
+            <div class="downitem"><!--別人2-->
+                <div class="us">
+                    <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
+                    <div class="downname">10842250 柯可妮</div>
+                </div>
+                <div class="downstar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="downcomment">除了太香了以外，我找不到缺點！</div>
+            </div>
+            <div class="downitem"><!--別人3-->
+                <div class="us">
+                    <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
+                    <div class="downname">11044136 連翊瑄</div>
+                </div>
+                <div class="downstar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="downcomment"><p>我很想給滿分，但我是貓派。</p><p>看到樓上的留言我就不想給了。</p></div>
+            
+            </div>
 
 
-        
-       
 
-        
-    
-</main>
-<footer style="position:relative; bottom:-800px">
-    <div class="footerdiv">
-        <div class="end">
-                <ul>
-                    <li><a href="../page/about.html">聯絡我們</a></li>
-                    <li><a href="##">幕後照片</a></li>
-                    <li><a href="##">訂購資料</a></li>
-                    <li><a href="##">申訴專線</a></li>
-                </ul>
         </div>
-        <h5 class="copyright">Copyrgiht @PERFUMEMORY 2022 All rights reserved</h5>
-        <div class="QR">
-            <img src="../asset/img/QRCode.png" alt="PM QRcode">
-            <h5>QRcode</h5>
-        </div>
-           
     </div>
+        </section>
+    </article>
+</main>
+<footer>
+    <div class="footerdiv">
+            <div class="end">
+                    <ul>
+                        <li><a href="../page/about.html">聯絡我們</a></li>
+                        <li><a href="##">幕後照片</a></li>
+                        <li><a href="##">訂購資料</a></li>
+                        <li><a href="https://appeal.cpc.ey.gov.tw/WWW/Default.aspx">申訴專線</a></li>
+                    </ul>
+            </div>
+            <h5 class="copyright">Copyrgiht @PERFUMEMORY 2022 All rights reserved</h5>
+            <div class="QR">
+                <img src="../asset/img/QRCode.png" alt="PM QRcode">
+                <h5>QRcode</h5>
+            </div>
+               
+        </div>
 </footer>
 
 </body>
