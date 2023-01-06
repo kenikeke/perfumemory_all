@@ -454,3 +454,10 @@ header {
   width: 100%;
   justify-content: center
 }
+.footerdiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dddddd;
+  color: #444444;
+}

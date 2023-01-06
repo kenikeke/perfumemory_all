@@ -103,6 +103,9 @@
     height: fit-content;
     background-color: transparent;
     border: none;
+    position: relative;
+    top: 20%;
+    left: 35%;
   }
   
   .btndiv{
