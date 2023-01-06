@@ -1,0 +1,341 @@
+<%@ page contentType="text/html" %>
+<%@page pageEncoding="UTF-8"%>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品詳細內容</title>
+    <link rel="stylesheet" href="../asset/css/star-rating-svg.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <script src="../js/jquery.star-rating-svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        @import url(../asset/css/index.css);
+        @import url(../asset/css/main.css);
+        @import url(../asset/css/shoppingcar.css);
+        @import url(../asset/css/productdetail.css);
+        
+
+    </style>
+</head>
+<link rel="shortcut icon" href="../asset/img/fragrance.png">
+<body>
+    <header><!-- 漢堡 -->
+        <div class="PERFUMEMORY">
+            <label for="burger" class="perimg"><img src="../asset/img/PERFUMEMORY.png" alt="LOGO" width="200" height="25"></label>
+            <input type="checkbox" checked id="burger" class="burgerbotton">
+             <div class="burgerline">
+            <div id="Nav2">
+                <div id="nav2">
+                    <div id="title2">
+                        <a href="../page/index.jsp" target="_top">
+                            <h1>首頁</h1>
+                        </a>
+                        <a href="../page/product.html" target="_top">
+                            <div class="dropdown">
+                                <h1 class="dropbtn">調性</h1>
+                                <div class="dropdown-content">
+                                    <a href="../page/flora.html">花香調</a>
+                                    <a href="../page/fresh.html">清新調</a>
+                                    <a href="../page/oriental.html">東方調</a>
+                                    <a href="../page/woody.html">木質調</a>
+                                  </div>
+                              </div>
+                        </a>
+                        <a href="../page/about.html" target="_top">
+                            <h1>關於我們</h1>
+                        </a>
+                        <a href="../page/shoppingcar.html" target="_top">
+                            <h1><img src="../asset/img/shoppingcar.png" alt="購物車"></h1>
+                        </a>
+                        
+                        <a  target="_top" style="cursor:pointer;">
+                            
+                                <div class="dropdown">
+                                    <h1><img class="dropbtn" src="../asset/img/personal.png" alt="個人頁面"></h1>
+                                   
+                                    <div class="dropdown-content" style="font-size: smaller;">
+                                        <p id="login" onclick="login()" style="cursor: pointer;">登入</p>
+                                        
+                                        <a href="../page/personal.html">個人頁面</a>
+                                        
+                                      </div>
+                                  </div>
+                            </a>
+                            
+                        </a>
+                        <dialog id="show">
+                            <div class="frame">
+                                <div class="login">
+                                    <div class="loginh2">
+                                        <h2 >Login</h2>
+                                    </div>
+                                    <div class="push">
+                                        <label for="account">Account</label>
+                                        <input type="text" name="" id="account">
+                                    </div>
+                                    <div class="push">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="" id="password">
+                                    </div>
+                                    <div class="push">
+                                        <button type="submit" class="btn_update"onclick="show.close()">Login</button>
+                                        <button class="btn_update" onclick="show.close()">Cancel</button>
+                                    </div>
+                                    <div class="new">尚未擁有帳號 ?
+                                        <p id="go_register">前往註冊</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+        
+                        <dialog id="userupdate" style="background-color: #c3c5c6; width: 80%; border-radius: 10px; border: 2px solid #757879ac;"  >
+                            <form>
+                                <div class="contain">
+                                    <h2 class="h2card">會員基本資料</h2>
+                                    
+                                        <div class="info">
+                                            <div class="data">
+                                                <label for="account">帳號：<br></label>
+                                                <input class="inputstyle"type="text" placeholder="你的帳號">
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">密碼：<br></label>
+                                                <input class="inputstyle" type="password" placeholder="你的密碼">
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">姓名：<br></label>
+                                                <input class="inputstyle" type="text" placeholder="Your Name">
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">電子信箱：<br></label>
+                                                <input class="inputstyle" type="email" placeholder="Your E-mail">
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">生日：<br></label>
+                                                <input class="inputstyle" type="date" >
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">性別： <br></label>
+                                                <input  type="radio"  name="sexual" style="margin: 20px 20px 5px;">男<br>
+                                                    <input  type="radio"  name="sexual" style="margin: 20px 20px">女<br>
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">通訊地址：<br></label>
+                                                <input class="inputstyle" type="text" placeholder="你的住址">
+                                            </div>
+                                            <div class="data">
+                                                <label for="name">聯絡電話：<br></label>
+                                                <input class="inputstyle" type="tel" placeholder="你的電話">
+                                            </div>
+        
+                                            <div class="btndiv">
+                                                <input type="submit" value="確認" class="btn_update">
+                                                <input type="reset" value="取消" class="btn_update" onclick="userupdate.close()" >
+                                            </div>
+                                        </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gotop">
+            <a href="#top">
+                <img src="../asset/img/uptop.png" alt="uptop">
+            </a>
+        </div>
+
+</header>
+
+<main>
+    <article>
+        <section>
+            <div class="item">
+                <div class="item-img"><!--商品照片-->
+                  <img src="../asset/img/product1.jpg " alt="" class="perfumeimg">
+                </div>
+                <div class="right-content">
+                    <div class="item-title"><!--商品名稱-->
+                      <h1>香水名字</h1>
+                    </div>
+                    <div class="item-content"><!--商品內容-->
+                      <p>這裡是要介紹商品的地方 要寫前調中調後調那些的</p>
+                    </div>
+                    <div class="price-and-amount"><!--商品價格-->
+                      <div class="price">
+                        <h1>定價:$50</h1>
+                      </div>
+                      <div class="amount"><!--加減選單-->
+                        <tr>
+                            <td class="big_btn_cart">
+                                <div class="btn_cart">
+                                    <input type="button" id="down" value="-">
+                                    <input type="text" id="num" value="1">
+                                    <input type="button" id="up" value="+">
+                                </div>
+                                    <div class="btn_buy">
+                                        <input type="button" value="BUY" onclick="confirmalert()">
+                                    </div>
+                            </td>
+                        </tr>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        
+        <section>
+            
+            <div class="zi_box_1"> <!--自己評論區-->
+			
+                <input type="text" name="name" placeholder="姓名">
+                <div class="my-rating" data-rating="2.5">
+                <script>
+                    $(".my-rating").starRating({
+                    totalStars: 5,
+                    starShape: 'rounded',
+                    starSize: 40,
+                    emptyColor: 'lightgray',
+                    hoverColor: '#FFF838',
+                    activeColor: '#717358',
+                    useGradient: false
+                    });
+                </script>
+                <textarea rows="5" placeholder="輸入您的評論" style="width:750px;height: 170px;"></textarea><br>
+            </div>
+            
+        </section>
+
+        <section>
+            
+            <div class="zi_box_2"> <!--別人評論區-->
+                <div class="downitem"><!--別人1-->
+                    <div class="us">
+                        <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
+                        <div class="downname">11044128 呂芯穎</div>
+                    </div>
+                    <div class="downstar">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="downcomment"><p>噴完之後 問同學 要不要和狗狗一起去散步 大家都喜歡</p></div>
+                </div>
+            
+
+            <div class="downitem"><!--別人2-->
+                <div class="us">
+                    <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
+                    <div class="downname">10842250 柯可妮</div>
+                </div>
+                <div class="downstar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="downcomment">除了太香了以外，我找不到缺點！</div>
+            </div>
+            <div class="downitem"><!--別人3-->
+                <div class="us">
+                    <div class="downimg"><img src="../asset/img/user.png" alt=""></div>
+                    <div class="downname">11044136 連翊瑄</div>
+                </div>
+                <div class="downstar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="downcomment"><p>我很想給滿分，但我是貓派。</p><p>看到樓上的留言我就不想給了。</p></div>
+            
+            </div>
+
+
+
+        </div>
+    </div>
+        </section>
+    </article>
+</main>
+<footer>
+    <div class="footerdiv">
+            <div class="end">
+                    <ul>
+                        <li><a href="../page/about.html">聯絡我們</a></li>
+                        <li><a href="##">幕後照片</a></li>
+                        <li><a href="##">訂購資料</a></li>
+                        <li><a href="https://appeal.cpc.ey.gov.tw/WWW/Default.aspx">申訴專線</a></li>
+                    </ul>
+            </div>
+            <h5 class="copyright">Copyrgiht @PERFUMEMORY 2022 All rights reserved</h5>
+            <div class="QR">
+                <img src="../asset/img/QRCode.png" alt="PM QRcode">
+                <h5>QRcode</h5>
+            </div>
+               
+        </div>
+</footer>
+
+</body>
+
+<script>
+
+    var Add = document.getElementById("up")
+    var Reduce = document.getElementById("down")
+    var num = document.getElementById("num")
+  
+    Add.onclick = function(){
+      num.value = parseInt(num.value)+1;
+    }
+  
+    Reduce.onclick = function(){
+      if(num.value <= 0){
+          num.value = 0;
+      }else{
+          num.value = parseInt(num.value)-1;
+      }
+    }
+  
+    var add = document.getElementById("Up")
+    var reduce = document.getElementById("Down")
+    var Num = document.getElementById("Num")
+  
+    add.onclick = function(){
+      Num.value = parseInt(Num.value)+1;
+    }
+  
+    reduce.onclick = function(){
+      if(Num.value <= 0){
+          Num.value = 0;
+      }else{
+          Num.value = parseInt(Num.value)-1;
+      }
+    }
+  
+  
+      function confirmalert(){
+          var yes = confirm('是否已確認數量正確 ?')
+  
+          if(yes){
+              alert('已加入購物車 ! ')
+          }else{
+              alert('您已按取消，請重新下單。')
+          }
+      }
+      
+  </script>
+</html>
