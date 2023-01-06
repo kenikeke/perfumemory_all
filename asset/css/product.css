@@ -76,16 +76,11 @@ article {
 
 .item {
     width: 290px;
-    height: fit-content;
+    height: 420px;
     background-color: #c5bdbdde;
     border-radius: 5px;
-    padding: 0px 20px 20px 20px;
+    padding: 10px;
     margin-left: 20px;
-}
-.item p{
-    background-color: white;
-    border-radius: 5px;
-    padding: 0px 10px;
 }
 
 .item-img {
@@ -94,9 +89,6 @@ article {
     position: relative;
     overflow: hidden;
 
-}
-.item-img img{
-    width:100%;
 }
 .item_btn{
     width: 60%;
